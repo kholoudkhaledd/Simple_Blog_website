@@ -11,8 +11,15 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Create 10 users, each with 5 posts
+        \App\Models\User::factory(10)
+            ->has(\App\Models\Post::factory()->count(5))
+            ->create();
+
+        // If you have categories, tags, or comments, seed them here as well
+        // \App\Models\Category::factory(5)->create();
+        // \App\Models\Comment::factory(20)->create();
     }
 }
