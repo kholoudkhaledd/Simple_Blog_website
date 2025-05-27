@@ -87,16 +87,14 @@ This project is a blog website built using the Laravel PHP framework. It allows 
 
 - User authentication (register, login, logout)
 - Create, edit, and delete blog posts
-- Comment on posts
 - Responsive design
-- Admin panel for managing content
-- Categories and tags for posts
+
 
 ## Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/laravel-blog.git
+   git clone https://github.com/kholoudkhaledd/Simple_Blog_website
    cd laravel-blog
    ```
 
