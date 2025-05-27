@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
@@ -61,4 +61,77 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+
+<h1 align="center">Laravel Blog</h1>
+
+<p align="center">
+A simple and modern blog platform built with Laravel.
+</p>
+
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+This project is a blog website built using the Laravel PHP framework. It allows users to create, edit, and manage blog posts with ease. The project is designed for learning and demonstration purposes.
+
+## Features
+
+- User authentication (register, login, logout)
+- Create, edit, and delete blog posts
+- Comment on posts
+- Responsive design
+- Admin panel for managing content
+- Categories and tags for posts
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/laravel-blog.git
+   cd laravel-blog
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   composer install
+   npm install
+   npm run dev
+   ```
+
+3. **Copy `.env` and set up environment:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Configure your database in `.env` and run migrations:**
+   ```bash
+   php artisan migrate
+   ```
+
+5. **Start the development server:**
+   ```bash
+   php artisan serve
+   ```
+
+## Usage
+
+- Visit `http://localhost:8000` in your browser.
+- Register a new account and start creating blog posts!
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
