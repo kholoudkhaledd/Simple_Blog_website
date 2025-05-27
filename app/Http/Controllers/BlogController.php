@@ -10,7 +10,9 @@ class BlogController extends Controller
     // Display all posts
     public function index()
     {
-        $posts = Post::latest()->get();
+        // $posts = Post::latest()->get();
+            $posts = Post::where('user_id', auth()->id())->latest()->get();
+
         return view('posts.index', compact('posts'));
     }
 
@@ -28,7 +30,12 @@ class BlogController extends Controller
             'content' => 'required',
         ]);
 
-        Post::create($request->only('title', 'content'));
+          Post::create([
+        'title' => $request->title,
+        'content' => $request->content,
+        'user_id' => auth()->id(), // Associate post with logged-in user
+    ]);
+
 
         return redirect()->route('posts.index')->with('success', 'Post created!');
     }
